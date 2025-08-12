@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Formulario Flask{% endblock %}
+
+{% block content %}
+<h1>Ingreso de Datos</h1>
+<form action="/agregar_persona" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" required><br><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" name="edad" required><br><br>
+
+    <label for="correo">Correo:</label>
+    <input type="email" name="correo" required><br><br>
+
+    <input type="submit" value="Enviar">
+</form>
+{% endblock %}
